@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carausal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            /* place-items: 'center'; */
+        }
+        .container-img{
+            width: 60vw;
+            height: 50rem;
+            border-radius: 1rem;
+            background-image: url('https://images.pexels.com/photos/919278/pexels-photo-919278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            animation: gallery 20s linear infinite;
+        }
+
+        @keyframes gallery {
+            0% {
+                background-image: url('https://images.pexels.com/photos/919278/pexels-photo-919278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            }
+
+            20% {
+                background-image: url('https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            }
+            40%{
+                background-image: url('https://images.pexels.com/photos/259637/pexels-photo-259637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            }
+            60%{
+                background-image: url('https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            }
+            80%{
+                background-image: url('https://images.pexels.com/photos/533080/pexels-photo-533080.jpeg');
+            }
+            100%{
+                background-image: url('https://images.pexels.com/photos/547119/pexels-photo-547119.jpeg?cs=srgb&dl=pexels-dreamypixel-547119.jpg&fm=jpg');
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-img"></div>
+</body>
+
+</html>
